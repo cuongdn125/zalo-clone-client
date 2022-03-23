@@ -1,5 +1,5 @@
 import { Backdrop, Box, CircularProgress } from "@mui/material";
-import { meApi } from "api/meApi";
+import meApi from "api/meApi";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";

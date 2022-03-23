@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { meApi } from "api/meApi";
+import meApi from "api/meApi";
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";

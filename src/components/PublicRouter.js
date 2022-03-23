@@ -1,4 +1,4 @@
-import { meApi } from "api/meApi";
+import meApi from "api/meApi";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, useNavigate } from "react-router-dom";

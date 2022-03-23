@@ -40,6 +40,4 @@ const meApi = {
   },
 };
 
-module.exports = {
-  meApi,
-};
+export default meApi;
