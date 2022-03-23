@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import globalReducer from "app/globalSlice";
+import chatReducer from "features/home/components/ChatSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    global: globalReducer,
+    chat: chatReducer,
   },
 });
