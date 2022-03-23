@@ -18,7 +18,7 @@ const authApi = {
   register: async (user, dispatch, navigate) => {
     dispatch(globalActions.register());
     try {
-      const res = await axiosClient.post("/auth/register", user);
+      await axiosClient.post("/auth/register", user);
       //   console.log(res);
       dispatch(globalActions.registerSuccess());
       navigate("/login");
