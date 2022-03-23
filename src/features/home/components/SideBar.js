@@ -5,7 +5,7 @@ import {
   SettingsOutlined,
 } from "@mui/icons-material";
 import { Avatar, Box, Button, Divider, Menu, MenuItem } from "@mui/material";
-import { authApi } from "api/authApi";
+import authApi from "api/authApi";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";

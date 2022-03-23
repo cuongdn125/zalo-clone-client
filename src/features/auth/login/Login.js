@@ -1,4 +1,4 @@
-import { authApi } from "api/authApi";
+import authApi from "api/authApi";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link as RouteLink, useNavigate } from "react-router-dom";

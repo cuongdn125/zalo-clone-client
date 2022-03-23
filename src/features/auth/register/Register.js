@@ -8,7 +8,7 @@ import Input from "../../../components/Input/Input";
 import "../login/Login.scss";
 import { Link as RouteLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { authApi } from "api/authApi";
+import authApi from "api/authApi";
 function Register() {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");

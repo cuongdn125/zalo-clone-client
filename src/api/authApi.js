@@ -48,6 +48,4 @@ const authApi = {
   },
 };
 
-module.exports = {
-  authApi,
-};
+export default authApi;
