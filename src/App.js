@@ -1,9 +1,7 @@
 import { PublicRoute } from "components/PublicRouter";
 import SlickIntroduce from "components/SlickIntroduce";
 import Login from "features/auth/login/Login";
-import LoginPage from "features/auth/login/LoginPage";
 import Register from "features/auth/register/Register";
-import RegisterPage from "features/auth/register/RegisterPage";
 import Chat from "features/home/components/Chat";
 import ContactSideBar from "features/home/components/Contact/ContactSideBar";
 import ListFriend from "features/home/components/Contact/ListFriend";
