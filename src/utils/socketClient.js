@@ -3,7 +3,7 @@ import io from "socket.io-client";
 export let socket;
 
 export function init() {
-  socket = io("http://localhost:8080", {
+  socket = io("https://zalo-app-dnc.herokuapp.com", {
     transports: ["websocket"],
     // autoConnect: false,
   });
