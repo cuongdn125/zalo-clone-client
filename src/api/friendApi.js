@@ -39,6 +39,4 @@ const friendApi = {
   },
 };
 
-module.exports = {
-  friendApi,
-};
+export default friendApi;

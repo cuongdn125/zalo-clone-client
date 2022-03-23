@@ -16,7 +16,7 @@ import React, { useEffect } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import styled from "styled-components";
 
-import { friendApi } from "api/friendApi";
+import friendApi from "api/friendApi";
 
 const SmallAvatar = styled(Avatar)`
   width: 15px;

@@ -13,7 +13,7 @@ import {
   TextField,
 } from "@mui/material";
 import axiosClient from "api/axiosClient";
-import { friendApi } from "api/friendApi";
+import friendApi from "api/friendApi";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useOutletContext } from "react-router-dom";
