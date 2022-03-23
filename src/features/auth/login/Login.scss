@@ -1,0 +1,128 @@
+.container {
+  background: #eefcff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .wrapper {
+    background-image: url("../../../assets/img/background.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    overflow: hidden;
+
+    .sidebar-login {
+      min-width: 300px;
+      width: 500px;
+      backdrop-filter: blur(35px);
+      background-color: rgba(255, 255, 255, 0.6);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .logo-login {
+        .logo {
+          width: 6rem;
+          height: 6rem;
+        }
+        h3 {
+          text-align: center;
+          color: #0368ff;
+          font-size: 22px;
+        }
+      }
+      .form-login {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          color: #666666;
+          margin-bottom: 2rem;
+        }
+        .btn-signup {
+          cursor: pointer;
+          width: 69%;
+          max-width: 350px;
+          min-width: 250px;
+          height: 40px;
+          border: none;
+          margin: 0.5rem 0.2rem;
+          border-radius: 10px;
+          box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
+          background-color: #3878d8;
+          color: #fff;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+        .error {
+          color: red;
+        }
+      }
+      .more-info {
+        h4 {
+          color: #808080;
+          span {
+            color: #3866aa;
+            cursor: pointer;
+          }
+        }
+      }
+      .login-social {
+        display: flex;
+
+        div {
+          background-color: #0368ff;
+          height: 40px;
+          min-width: 100px;
+          width: 120px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-3px);
+          }
+
+          img {
+            height: 20px;
+            color: #fff;
+          }
+          span {
+            color: #fff;
+            margin-left: 0.2rem;
+          }
+        }
+        .login-facebook {
+          background-color: #507dc0;
+        }
+        .login-google {
+          background-color: #df492f;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    .wrapper {
+      .sidebar-login {
+        width: 100vw;
+        padding: 0;
+      }
+    }
+  }
+}
