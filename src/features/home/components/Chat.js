@@ -1010,17 +1010,20 @@ const Chat = (props) => {
               <ImageList
                 sx={{ width: "100%", height: "100%" }}
                 cols={2}
-                rowHeight={164}
+                // rowHeight={164}
               >
                 {listMessage.map((item) => {
                   if (item?.type === "image") {
                     return (
                       <ImageListItem key={item?._id}>
                         <img
-                          src={`${item?.content}?w=164&h=164&fit=crop&auto=format`}
-                          srcSet={`${item?.content}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                          src={item?.content}
                           alt="img"
                           loading="lazy"
+                          // style={{
+                          //   width: "auto",
+                          //   height: "100%",
+                          // }}
                         />
                       </ImageListItem>
                     );
